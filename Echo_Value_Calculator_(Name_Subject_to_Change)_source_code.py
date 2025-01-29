@@ -136,7 +136,7 @@ def game_data(char_name):
     stat_name=["Crit Rate%", "Crit Damage%", "Attack%", "Flat Attack", "Basic Attack Damage Bonus%", "Heavy Attack Damage Bonus%", "Resonance Skill Damage Bonus%", "Resonance Liberation Damage Bonus%", "Energy Regen%", "HP%", "Flat HP", "Defense%", "Flat Defense", "Energy Regen% value"]
     stat_med=[8.4, 16.8, 9, 50, 9, 9, 9, 9, 10.25, 9, 450, 11.39, 50, 1]
     if char_name=="carlotta" or char_name=="glass girl" or char_name=="small car lotta damage. wait... what?" or char_name=="in the name of the montellis." or char_name=="rin tohsaka" or char_name=="best girl":
-        char_name2=["Carlotta", "her"]
+        char_name2=["Carlotta", "her"]#I've added these pronouns as I was printing (This character does X% of their damage as Basic/Heavy/Skill/Liberation dmg.) - but when printing "Carlotta does 85% of their damage as resonance skill damage - it just sounded weird af". I ended up not including this in the end anyway but was too lazy to take it out.
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0.5*0.85, 0, -125, 0, 0, 0, 0, 0]
     elif char_name=="jinhsi" or char_name=="madam magistrate" or char_name=="sacred light!" or char_name=="snow girl":
         char_name2=["Jinhsi", "her"]
@@ -442,7 +442,7 @@ def echo_eval(echo_val, eval_type, anal_type):
 
 def main():
     print("\n========== ========== ========== ========== =========="
-          "\n\nWelcome to the Echo Value Calculator (name subject to change) v0.2250125")
+          "\n\nWelcome to the Echo Value Calculator (name subject to change) v1.00.280125")
     calc_route()
 
 main()
