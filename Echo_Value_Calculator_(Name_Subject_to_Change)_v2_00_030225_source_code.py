@@ -16,7 +16,7 @@ import sys
 
 def main():
     print("\n========== ========== ========== ========== =========="
-          "\n\nWelcome to the Echo Value Calculator (name subject to change) v2.00.030225")
+          "\n\nWelcome to the Echo Value Calculator (name subject to change) v2.00.040225")
     calc_route()
 
 def calc_route():
@@ -58,6 +58,7 @@ def calc_route():
               "\n\nGod Tier [Score>=99]: \nYou've entered the stats incorrectly or there is an error with this code or logic on my part. "
               "\nThe alternative, that there's no error on either sides, means you've got yourself a build worthy of worship. You can start a religion out of this. "
               "\n\nAdditional info: the max achievable points does not equal 100. But forget ever reaching 3 digits muhahahaha (idk why I'm laughing I'm literally in the same boat). ")
+        calc_route()
     elif calc_type=="4":
         print("\n---------- ---------- About the Echo Value Calculator (name subject to change) and the Scoring Method ---------- ----------"
               "\n\nThe goal here is to put a value on your ECHOS. NOT your overall character. "
@@ -157,88 +158,88 @@ def game_data(char_name):
         char_name2=["Carlotta"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0, 0, 0.5*0.85, 0, -125, -1, 0]
     elif char_name=="jinhsi" or char_name=="madam magistrate" or char_name=="sacred light!" or char_name=="snow girl":
-        char_name2=["Jinhsi", "her"]
+        char_name2=["Jinhsi"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0, 0, 0.5*0.75, 0.5*0.2, -115, -0.2/0.95, 0]
     elif char_name=="encore"  or char_name=="leave... me... alone!" or char_name=="annie" or char_name=="klee" or char_name=="maygi" or char_name=="pink gremlin":
-        char_name2=["Encore (Hypercarry)", "her"]
+        char_name2=["Encore (Hypercarry)"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.5, 0, 0.5*0.2, 0.5*0.1, -125, -1, 0]
     elif char_name=="yinlin" or char_name=="hmph... now you'll behave." or char_name=="bdsm" or char_name=="dominatrix" or char_name=="puppet girl":
-        char_name2=["Yinlin", "her"]
+        char_name2=["Yinlin"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.1, 0.5*0.1, 0.5*0.55, 0.5*0.2, -135, -0.2/0.95, 0]
     elif char_name=="sanhua" or char_name=="jinhsi's bodyguard" or char_name=="goth girl #3" or char_name=="goth girl 3" or char_name=="shackles begone!":
-        char_name2=["Sanhua", "her"]
+        char_name2=["Sanhua"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0, 0.5*0.3, 0.5*0.3, 0.5*0.3, 0, 0, 0]
     elif char_name=="zhezhi" or char_name=="shy girl" or char_name=="painter girl" or char_name=="art unveiled":
-        char_name2=["Zhezhi", "her"]
+        char_name2=["Zhezhi"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.8, 0.5*0.05, 0.5*0.05, 0, -135, -1, 0]
     elif char_name=="aalto" or char_name=="cool shades" or char_name=="thanks for watching!":
-        char_name2=["Aalto", "his"]
+        char_name2=["Aalto"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.50, 0, 0.5*0.25, 0.5*0.15, -135, -0.65/0.9, 0]
     elif char_name=="baizhi" or char_name=="goth girl #2" or char_name=="goth girl 2" or char_name=="verina at home" or char_name=="better than verina" or char_name=="endless reverberation.":
-        char_name2=["Baizhi", "her"]
+        char_name2=["Baizhi"]
         char_stats=[0, 0, 0, 0, 1, 0.5, 0, 0, 0, 0, 0, 0, -215, -1, 0]
     elif char_name=="brant":
         print("Brant's stats are currently unavailable. Please check the next version.\n")
         calc_route()
     elif char_name=="cucumber" or char_name=="calculator" or char_name=="vergil" or char_name=="kurapika" or char_name=="kukaracha" or char_name=="calcium" or char_name=="carpaccio" or char_name=="cactus" or char_name=="calculus" or char_name=="calzone" or char_name=="misery follows!":
-        char_name2=["Calcharo", "his"]
+        char_name2=["Calcharo"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.25, 0, 0, 0.5*0.55, -125, -1, 0]
     elif char_name=="camellya" or char_name=="zyra" or char_name=="yuno gasai" or char_name=="yandere girl" or char_name=="she wants my seed?" or  char_name=="i can fix her" or char_name=="spin to win" or char_name=="gymnasts girl" or char_name=="i will do gymnastics with her but ancient greek style" or char_name=="struggle harder, entertain me!":
-        char_name2=["Camellya", "her"]
+        char_name2=["Camellya"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.7, 0, 0, 0.5*0.15, -120, -0.15/0.85, 0]
     elif char_name=="changli" or char_name=="fox girl" or char_name=="ahri" or char_name=="nine-tailed fox" or char_name=="yae miko" or char_name=="feathers incinerate.":
-        char_name2=["Changli", "her"]
+        char_name2=["Changli"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.05, 0, 0.5*0.6, 0.5*0.25, -125, -0.25/0.9, 0]
     elif char_name=="chixia" or char_name=="amber" or char_name=="finger pistol" or char_name=="ma xiaofang" or char_name=="boom! headshot!" or char_name=="pew pew pew!" or char_name=="one shot, one kill!" or char_name=="easy peasy. lemon squeezy!" or char_name=="dakka dakka dakka dakka dakka!":
-        char_name2=["Chixia", "her"]
+        char_name2=["Chixia"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0, 0, 0.5*0.5, 0.5*0.3, -150, -0.3/0.8, 0]
     elif char_name=="danjin" or char_name=="darkness falls...":
-        char_name2=["Danjin", "her"]
+        char_name2=["Danjin"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.05, 0.5*0.25, 0.5*0.25, 0.5*0.3, 0, 0, 0]
     elif char_name=="jianxin" or char_name=="sage girl" or char_name=="small-town girl" or char_name=="universe in my psyche!":
         print("Jianxin's data is currently unavailable. Please check in later.\n")
         calc_route()
     elif char_name=="jiyan" or char_name=="dragon boy" or char_name=="teal general" or char_name=="windrider!":
-        char_name2=["Jiyan", "his"]
+        char_name2=["Jiyan"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0, 0.5*0.7, 0.5*0.15, 0, -130, -1, 0]
     elif char_name=="lingyang" or char_name=="who..." or char_name=="cares." or char_name=="gaming" or char_name=="this might hurt.":
-        char_name2=["Lingyang", "his"]
+        char_name2=["Lingyang"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.35, 0, 0.5*0.3, 0.5*0.05, -125, -1, 0]
     elif char_name=="lumi" or char_name=="delivery girl" or char_name=="bunny girl" or char_name=="squeakie, protect the cargo!":
-        char_name2=["Lumi", "her"]
+        char_name2=["Lumi"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.35, 0, 0.5*0.25, 0.5*0.3, -165, -1, 0]
     elif char_name=="mortefi" or char_name=="xingqiu" or char_name=="four-eyes" or char_name=="roy mustang" or char_name=="fuel my wrath!":
-        char_name2=["Mortefi", "his"]
+        char_name2=["Mortefi"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.1, 0, 0.5*0.15, 0.5*0.7, -125, -1, 0]
     elif char_name=="phoebe" or char_name=="sister" or char_name=="church girl":
         print("Phoebe's stats are unavailable right now. Please check future updates.\n")
         calc_route()
     elif char_name=="roccia" or char_name=="mamma mia!" or char_name=="pero":
-        char_name2=["Roccia", "her"]
+        char_name2=["Roccia"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.05, 0.5*0.6, 0.5*0.15, 0, -135, -1, 0]
     elif char_name=="havoc rover" or char_name=="goth girl #1" or char_name=="goth girl 1" or char_name=="goth guy" or char_name=="rizzler" or char_name=="havoc mc":
-        char_name2=["Havoc Rover", "their"]
+        char_name2=["Havoc Rover"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.3, 0, 0.5*0.2, 0.5*0.25, -125, -0.25/0.75, 0]
     elif char_name=="taoqi" or char_name=="personalities" or char_name=="two reasons" or char_name=="attack is the best defense.":
-        char_name2=["Taoqi", "her"]
+        char_name2=["Taoqi"]
         char_stats=[0, 0, 0, 0, 0, 0, 1, 0.5, 0, 0, 0, 0, -170, -1, 0]
-    elif char_name=="the shorekeeper" or char_name=="best waifu" or char_name=="must protect" or char_name=="vow from the soul." or char_name=="in war with time." or char_name=="i engraft you new." or char_name=="astral modulation." or char_name=="ordained.":
-        char_name2=["The Shorekeeper", "her"]
+    elif char_name=="the shorekeeper" or char_name == "shorekeeper" or char_name=="best waifu" or char_name=="must protect" or char_name=="vow from the soul." or char_name=="in war with time." or char_name=="i engraft you new." or char_name=="astral modulation." or char_name=="ordained.":
+        char_name2=["The Shorekeeper"]
         char_stats=[0, 1, 0, 0, 0.5, 0.25, 0, 0, 0.5*0.1, 0, 0, 0.5*0.85, -240, -1, 0]
     elif char_name=="verina" or char_name=="flower girl" or char_name=="life is in everything.":
-        char_name2=["Verina", "her"]
+        char_name2=["Verina"]
         char_stats=[0, 0, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, -200, -1, 0]
     elif char_name=="xiangli yao" or char_name=="xiangling" or char_name=="reconfiguration!":
-        char_name2=["Xiangli yao", "his"]
+        char_name2=["Xiangli yao"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.1, 0, 0.5*0.2, 0.5*0.55, -120, -0.55/0.85, 0]
     elif char_name=="yangyang" or char_name=="coolest animations" or char_name=="tempest." or char_name=="i think she likes us":
-        char_name2=["Yangyang", "her"]
+        char_name2=["Yangyang"]
         char_stats=[1, 1, 0.5, 0.25, 0, 0, 0, 0, 0.5*0.3, 0, 0.5*0.15, 0.5*0.45, 0, 0, 0]
     elif char_name=="youhu" or char_name=="you who" or char_name=="noice!":
-        char_name2=["Youhu", "her"]
+        char_name2=["Youhu"]
         char_stats=[0, 0, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, -165, -1, 0]
     elif char_name=="yuanwu" or char_name=="you and who" or char_name=="maximum voltage.":
-        char_name2=["Yuanwu", "his"]
+        char_name2=["Yuanwu"]
         char_stats=[1, 1, 0, 0, 0, 0, 0.5, 0.25, 0, 0, 0.5*0.5, 0.5*0.4, -140, -1, 0]
     elif char_name=="zani" or char_name=="that button is the real body guard":
         print("Zani stats currently unavailable. Please come back later.\n")
@@ -250,9 +251,10 @@ def game_data(char_name):
         calc_route()
     print("\n---------- ---------- ---------- ---------- ----------\nYou have selected "+char_name2[0]+".\n---------- ---------- ---------- ---------- ----------")
     cons_er=input(char_name2[0]+" has a comfortable ER target value of "+str(-char_stats[12])+"% with a relative substat value multiplier of "+str(-char_stats[13]*100)+"%. \n"
-                  "Would you like to IGNORE this character's ER requirements? Enter y for 'yes', Enter any other key for 'no'. \n"
+                  "Would you like to IGNORE this character's ER requirements? Press y and enter for 'yes', just press enter for 'no'. \n"
                   "!!!WARNING!!!: Chosing to IGNORE a character's ER requirements may lead to highly inflated OR deflated ratings. \n"
-                  "Whether ER requirements are present or absent, it is highly recommeneded to pick 'no' and enter any key other than 1 to continue: \n")
+                  "Substantial Effort has been put to ensure that echos are evaluated sensibly in all possible situations for all possible characters. \n"
+                  "Regardless of whether your character has ER targets or not, it is HIGHLY recommeneded to just press enter and continue: \n")
     if cons_er=="y":
         char_stats[12]=0
     return stat_name, stat_med, char_name2, char_stats
@@ -277,7 +279,7 @@ def disp_char_data(stat_name, stat_med, char_name2, char_stats):
         print("The reletive value of a median roll ("+str(stat_med[12])+") of "+stat_name[12]+" is fluctuating based on complex factors, and may not be constant even during the evaluation of a single build (option 1)."
               "\nRest assured: ER is handled very carefully and apporpiately to accurately reflect its true value in the scoring system. "
               "\nFor further details, please check the original reddit post. ")
-    main()
+    calc_route()
 
 def player_data(stat_name, stat_med, char_name, char_stats, net_er, rat_typ):
     player_input=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
