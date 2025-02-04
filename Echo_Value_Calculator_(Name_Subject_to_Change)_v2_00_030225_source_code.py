@@ -250,7 +250,7 @@ def game_data(char_name):
         print ("\nCharacter not found or character name not recognized. Please try again.\nRestarting Program...\n\n")
         calc_route()
     print("\n---------- ---------- ---------- ---------- ----------\nYou have selected "+char_name2[0]+".\n---------- ---------- ---------- ---------- ----------")
-    cons_er=input(char_name2[0]+" has a comfortable ER target value of "+str(-char_stats[12])+"% with a relative substat value multiplier of "+str(-char_stats[13]*100)+"%. \n"
+    cons_er=input(char_name2[0]+" has a comfortable ER target value of "+str(-char_stats[12])+"% with a relative substat value multiplier of "+str(round(-char_stats[13]*100, 3))+"%. \n"
                   "Would you like to IGNORE this character's ER requirements? Press y and enter for 'yes', just press enter for 'no'. \n"
                   "!!!WARNING!!!: Chosing to IGNORE a character's ER requirements may lead to highly inflated OR deflated ratings. \n"
                   "Substantial Effort has been put to ensure that echos are evaluated sensibly in all possible situations for all possible characters. \n"
@@ -273,9 +273,9 @@ def disp_char_data(stat_name, stat_med, char_name2, char_stats):
           "\nHowever, feel free to report any inconsistency you feel are significant as a comment in the publishing post to improve this program. \n")
     for y in range (0, len(stat_name)-2):
         if char_stats[y]>0:
-            print("The reletive value of a median roll ("+str(stat_med[y])+") of "+stat_name[y]+" for "+char_name2[0]+" is: "+str(char_stats[y]*100)+"%")
+            print("The reletive value of a median roll ("+str(stat_med[y])+") of "+stat_name[y]+" for "+char_name2[0]+" is: "+str(round(char_stats[y]*100, 3))+"%")
     if char_stats[12]<0:
-        print("The "+stat_name[12]+" requirements for "+char_name2[0]+" are: "+str(-char_stats[12])+"% with a relative substat value multiplier of: "+str(-char_stats[13]*100)+".")
+        print("The "+stat_name[12]+" requirements for "+char_name2[0]+" are: "+str(-char_stats[12])+"% with a relative substat value multiplier of: "+str(round(-char_stats[13]*100, 3))+".")
         print("The reletive value of a median roll ("+str(stat_med[12])+") of "+stat_name[12]+" is fluctuating based on complex factors, and may not be constant even during the evaluation of a single build (option 1)."
               "\nRest assured: ER is handled very carefully and apporpiately to accurately reflect its true value in the scoring system. "
               "\nFor further details, please check the original reddit post. ")
@@ -328,7 +328,7 @@ def player_data(stat_name, stat_med, char_name, char_stats, net_er, rat_typ):
 
 def echo_eval(echo_val, eval_type, anal_type):
     eval_ui=["Echo", "Build"]
-    print("\n\nYour "+eval_ui[eval_type]+" rating is: "+str(echo_val))
+    print("\n\nYour "+eval_ui[eval_type]+" rating is: "+str(round(echo_val, 3)))
     if echo_val>=99:
         print("\nThis "+eval_ui[eval_type]+" falls in the 'Godly' tier.")
     elif echo_val>=88:
