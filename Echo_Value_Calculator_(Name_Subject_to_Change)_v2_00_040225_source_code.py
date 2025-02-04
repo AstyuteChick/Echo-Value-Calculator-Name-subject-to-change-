@@ -252,9 +252,9 @@ def game_data(char_name):
     print("\n---------- ---------- ---------- ---------- ----------\nYou have selected "+char_name2[0]+".\n---------- ---------- ---------- ---------- ----------")
     cons_er=input(char_name2[0]+" has a comfortable ER target value of "+str(-char_stats[12])+"% with a relative substat value multiplier of "+str(round(-char_stats[13]*100, 3))+"%. \n"
                   "Would you like to IGNORE this character's ER requirements? Press y and enter for 'yes', just press enter for 'no'. \n"
-                  "!!!WARNING!!!: Chosing to IGNORE a character's ER requirements may lead to highly inflated OR deflated ratings. \n"
+                  "!!!WARNING!!!: Chosing to IGNORE a character's ER requirements may lead to highly inflated OR deflated ratings. "
                   "Substantial Effort has been put to ensure that echos are evaluated sensibly in all possible situations for all possible characters. \n"
-                  "Regardless of whether your character has ER targets or not, it is HIGHLY recommeneded to just press enter and continue: \n")
+                  "Regardless of whether your character has ER targets or not, it is HIGHLY RECOMMENDED to just press enter and continue WITHOUT ignoring ER considerations: \n")
     if cons_er=="y":
         char_stats[12]=0
     return stat_name, stat_med, char_name2, char_stats
