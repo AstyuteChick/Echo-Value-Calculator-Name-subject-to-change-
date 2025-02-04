@@ -16,6 +16,7 @@ FEATURES:
 3. The program fairly values and considers all your character's specific and relevant stats, including ER!
 4.  Includes all the characters upto and including Roccia, with the exception of Jianxin.
 
+
 How it works:
 
 There are two processes that comprise this program:
@@ -41,10 +42,10 @@ Here is the rating bracket:
 
 [Score>=99]: Godly Build
 
-
 From the above mentioned method, if you guessed that it's possible to score above 100, you'd be right! 
 
 But I highly doubt even 1% of the player-base will reach Extreme builds. And while I'm of the "never say never" mindset - there's just no chance even a single player reaches that "Godly" bracket. A singular echo - MAYBE... But a full build? Nope. Not happening. Good luck tho. 
+
 
 Future Plans: 
 
@@ -52,11 +53,14 @@ The version has a clear meaning. The first number represents a Major update. The
 Minor changes will help keep the program up to date with the newest character releases, new found data and discoveries, bug-fixes and things of that nature.
 Major updates are the long-term future goals for this program. They include major changes in the code's engine, looks and functionality, and scope. For version 3, for example, I aim to graduate from this text-based look to a proper interactive GUI with windows and buttons and color and convenience and a LOT of QoL etc. For version 4, I plan to do a major content update - with the whole program acting more closer to a full fledged WuWa guide with interactive thoughts and advice for specific characters, adjusting your echo-scores by factoring in stuff like your crit ratio, weapon rarity, echo setup (ele-ele or ele-atk, or 44111?) and more that I will keep secret for now. 
 
+
 Special Thanks to: Maygi (u/Maygii on reddit, Maygi on YouTube) and prydwen.gg
 
 Maygi: This program would quite literally be IMPOSSIBLE without her mathematical guides. The reason: Gains from median substat rolls - bar graphs! Studying her data made me realize that there's a generic pattern to the relative value of substats for a general atk scaling character: on a scale where an avg crit roll increases your dmg by 1, atk% will do so by 0.5, flat atk by 0.25 and, here's the main part I discovered, the basic/heavy/skill/liberation bonus% will increase your damage on this scale by 0.5*(ratio of this type of damage to overall damage) (or maybe even more accurately: relative value of atk% * ratio of damage type in damage profile). Confirming that last part with a high degree of accuracy using Maygi's amazing guides on reddit and youtube, and cross-checking them with countless other sources made me confident that this program would at least be practical. I highly recommend checking her content out - even if you're not into the mathy stuff. Very entertaining and educational guides! https://www.youtube.com/@Maygi
+
 Prydwen.gg : I just have to applaud their commitment to making up-to-date guides, providing info in a easy to consume manner, representing their data beautifully and just a 10/10 presentation. There's only so much research I can do under the guise of procrastination - and without Prydwen.gg , I'm not sure how long much longer I would have taken to finish the first version of this program - if ever!
 Additionally: I also want to acknowledge that I went through a LOT of other guides and websites and videos as well to do my due diligence and make sure mains of any and all characters are happy with the program.
+
 
 Final Notes:
 
