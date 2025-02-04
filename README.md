@@ -17,14 +17,23 @@ The scoring system is a scale where an echo that has the 5 best substats a chara
 The above paragraph on its own provides almost all the things to start calculating. With ER, while the theory again is simple, actually applying it to the calculator was difficult but it does this correctly and accurately (at least from my, albeit small-scale, testing). For a more detailed explanation and example calculations, please pick option 4 in the program to get a full walkthrough for how to calculate the value for an Echo/Build for Carlotta. For the FULL theory, mathematics and logic of the program, I will be posting a document covering all of those aspects in detail very soon.
 2. Echo Value Analyzer: This analyzes the ratings your echos/build has gotten. This is a much more empirical process (Ik technically being empirical has nothing to do with being or not being scientific). This means that what the program actually thinks of your program is to be taken with a HUGE grain of salt. I've tried my best to verify if the ranking system makes sense, and I'm convinced it's spot on - but I'm short on data. I will keep making this (and every other) part of the program better and better in the coming versions. 
 
+
 Here is the rating bracket: 
+
 [0<=Score<44]: Unbuilt character.
+
 [44<=Score<55]: Base-Level Build
+
 [55<=Score<66]:  Decent Build
+
 [66<=Score<77]: Well-Built Character
+
 [77<=Score<88]: High-Investment Build
+
 [88<=Score<99]: Extreme Build
+
 [Score>=99]: Godly Build
+
 
 From the above mentioned method, if you guessed that it's possible to score above 100, you'd be right! 
 But I highly doubt even 1% of the player-base will reach Extreme builds. And while I'm of the "never say never" mindset - there's just no chance even a single player reaches that "Godly" bracket. A singular echo - MAYBE... But a full build? Nope. Not happening. Good luck tho. 
