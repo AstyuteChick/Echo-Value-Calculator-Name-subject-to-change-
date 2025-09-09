@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div>
+    <form method="POST" action="{{url_for('echo')}}">
+    <div class="character_scenario_settings_echo">
+        <div>
+            <label for="buff_echo">Energy buffs from outros: </label>
+            <select name="buff_echo">
+                <option value="None" {% if "None"==prev_buff %} selected="selected" {% endif %}>None</option>
+                <option value="Zhezhi" {% if "Zhezhi"==prev_buff %} selected="selected" {% endif %}>Zhezhi</option>
+                <option value="Yangyang" {% if "Yangyang"==prev_buff %} selected="selected" {% endif %}>Yangyang</option>
+            </select>
+        </div>
+        <div>
+            <label for="char_echo">Select your character: </label>
+            <select name="char_echo">
+                {% for char_name in char_data %}
+                <option value="{{char_name}}" {% if char_name==prev_char %} selected="selected" {% endif %}>{{char_name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="er_tot_echo">Total ER of the build* : </label>
+            <input name="er_tot_echo" value="{{prev_er}}">
+        </div>
+    </div>
+    <div class="echo">
+        <div class="data_input">
+            <div class="echo_head">
+                <h2>Echo Sub Stats: </h2>
+            </div>
+            {% for stat_name in stat_names %}
+            {% if loop.index is odd %}
+                {% set color_cask="#ffe7d4"%}
+            {% else %}
+                {% set color_cask="#b08876"%}
+            {% endif %}
+            <div style="background-color: {{color_cask}};">
+                <label for="{{stat_name}}">{{stat_name}}</label>
+                <select style="background-color: {{color_cask}};" name="{{stat_name}}">
+                    <option value=0.0>0.0</option>
+                    {% for stat_roll in stat_rolls[stat_name]%}
+                    <option value={{stat_roll}}>{{stat_roll|string}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+            <div class="cont_sub">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </div>
+        <div class="analysis_echo">
+            <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float>0 %} style="background-color: #69BA18;" {% else %} style="background-color: #00ffff;" {% endif %} > {{echo_score}}</h2></div>
+            <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float>0 %} style="background-color: #69BA18;" {% else %} style="background-color: #00ffff;" {% endif %} > {{echo_tier}}</h2></div>
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock %}

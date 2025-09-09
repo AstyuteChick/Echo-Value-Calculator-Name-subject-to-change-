@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div>
+<form method="POST" action="{{url_for('full')}}">
+    <div class="character_scenario_settings_full">
+        <div>
+            <label for="buff_full">Energy buffs from outros: </label>
+            <select name="buff_full">
+                <option value="None" {% if "None"==prev_buff %} selected="selected" {% endif %}>None</option>
+                <option value="Zhezhi" {% if "Zhezhi"==prev_buff %} selected="selected" {% endif %}>Zhezhi</option>
+                <option value="Yangyang" {% if "Yangyang"==prev_buff %} selected="selected" {% endif %}>Yangyang</option>
+            </select>
+        </div>
+        <div>
+            <label for="char_full">Select your character: </label>
+            <select name="char_full">
+                {% for char_name in char_data %}
+                <option value="{{char_name}}" {% if char_name==prev_char %} selected="selected" {% endif %}>{{char_name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="er_tot_full">Total ER of the build* : </label>
+            <input name="er_tot_full" value="{{prev_er}}">
+        </div>
+    </div>
+    <div class="all_echo_cont">
+        <div class="echo_grid">
+        {% for echo_no in range(1, 6) %}
+        <div>
+            <div class="echo_no"><h2>Echo {{echo_no|string}}</h2></div>
+            {% for stat_name in stat_names %}
+            {% if (loop.index+echo_no) is even %}
+                {% set color_cask="#b08876"%}
+            {% else %}
+                {% set color_cask="#ffe7d4"%}
+            {% endif %}
+            <div style="background-color: {{color_cask}};">
+                <label for="{{stat_name}} {{echo_no}}">{{stat_name}}</label>
+                <select style="background-color: {{color_cask}}; border-width: thin;" name="{{stat_name}} {{echo_no}}">
+                    <option value=0.0>0.0</option>
+                    {% for stat_roll in stat_rolls[stat_name]%}
+                    <option value={{stat_roll}}>{{stat_roll|string}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        </div>
+        <div class="sub_full"><input type="submit" value="submit"></div>
+    </form>
+    <div class="echo_out">
+        <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float<44 %} style="background-color: #69BA18;" {%else%} style="background-color: #00ffff;" {% endif %}>{{echo_score}}</h2></div>
+        <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float<44 %} style="background-color: #69BA18;" {%else%} style="background-color: #00ffff;" {% endif %}>{{echo_tier}}</h2></div>
+    </div>
+</div>
+{% endblock %}

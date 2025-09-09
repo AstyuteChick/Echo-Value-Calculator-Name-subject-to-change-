@@ -1,0 +1,54 @@
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body{
+    font-family: Questrial;
+}
+
+.canvas1 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    background-color: #a93800;
+}
+
+.sidebar {
+    padding: 10px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_prime {
+    margin-left: 50px;
+}
+
+.title1 {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title1 h1{
+    font-family: Cascadia Code;
+    font-size: 48pt;
+    background: #ffe7d4;
+    border-style: solid;
+    padding: 10px;
+}
+
+.sidebar a {
+    margin-bottom: 50px;
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background: #ffe7d4;
+    transition: background-color 0.15s;
+}
+
+.sidebar a:hover{
+    background-color: #00ffff;
+}

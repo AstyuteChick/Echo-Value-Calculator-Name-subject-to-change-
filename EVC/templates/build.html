@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div>
+    <form method="POST" action="{{url_for('build')}}">
+    <div class="character_scenario_settings_build">
+        <div class="outro_buff_b">
+            <label for="buff_build">Energy buffs from outros: </label>
+            <select name="buff_build">
+                <option value="None" {% if "None"==prev_buff %} selected="selected" {% endif %}>None</option>
+                <option value="Zhezhi" {% if "Zhezhi"==prev_buff %} selected="selected" {% endif %}>Zhezhi</option>
+                <option value="Yangyang" {% if "Yangyang"==prev_buff %} selected="selected" {% endif %}>Yangyang</option>
+            </select>
+        </div>
+        <div class="character_select_b">
+            <label for="char_build">Select your character: </label>
+            <select name="char_build">
+                {% for char_name in char_data %}
+                <option value="{{char_name}}" {% if char_name==prev_char %} selected="selected" {% endif %}>{{char_name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="total_er_b">
+            <label for="er_tot_build">Total ER of the build* : </label>
+            <input name="er_tot_build" value="{{prev_er}}">
+        </div>
+    </div>
+    <div class="ecs_cont">
+    <div class="echo_cost_setup">
+        <label for="echo_setup">Select Echo cost setup: </label>
+        <select name="echo_setup" id="echo_setup" onchange="show_build_in()">
+            <option value="43311">43311</option>
+            <option value="44111">44111</option>
+        </select>
+    </div>
+    </div>
+
+    <div class="build_template">
+        {% for setup in [[4, 3, 3, 1, 1], [4, 4, 1, 1, 1]] %}
+        <div class="build_in" {% if setup[1]==4 %} id="44111" {% else %} id="43311" {% endif %} {% if setup[1]==4 %} style="display: none;" {% endif %}>
+        <div class="build_head"><h2>Build: {% if setup[1]==4 %}44111{% else %}43311{% endif %}</h2></div>
+        <div class="build_grid">
+            <div class="bg_echo_costs">
+            {% for echo_cost in setup %}
+            {% if loop.index is odd %}
+                {% set color_cask="#00c2bf"%}
+            {% else %}
+                {% set color_cask="#11fcf7"%}
+            {% endif %}
+            <div style="background-color: {{color_cask}};">
+                <select style="background-color: {{color_cask}}; border-width: thin;" {% if setup[1]==4 %} name="c{{loop.index|string}}" {% else %} name="s{{loop.index|string}}" {% endif%}>
+                    {% for stat_name in mainstat_dict[echo_cost]%}
+                    <option value="{{stat_name}}">{{echo_cost|string}} Cost - {{stat_name}} : </option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+            </div>
+            <div class="bg_build_stats">
+            {% for stat_name in stat_names %}
+            {% if loop.index is odd %}
+                {% set color_cask="#ffe7d4"%}
+            {% else %}
+                {% set color_cask="#b08876"%}
+            {% endif %}
+            <div style="background-color: {{color_cask}};">
+                <label for="{{stat_name}}">{{stat_name}}</label>
+                <input type="text" name="{{stat_name}}" value=0.0>
+            </div>
+            {% endfor %}
+            </div>
+            <div class="analysis_build">
+            <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float<44 %} style="background-color: #69BA18;" {%else%} style="background-color: #00ffff;" {% endif %}>{{echo_score}}</h2></div>
+            <div><h2 {% if echo_score|float>= 88 %} style="background-color: #FFD700;" {% elif echo_score|float>=66 %} style="background-color: #FF38AE;" {% elif echo_score|float>=44 %} style="background-color: #00E1FF;" {% elif echo_score|float<44 %} style="background-color: #69BA18;" {%else%} style="background-color: #00ffff;" {% endif %}>{{echo_tier}}</h2></div>
+            </div>
+        </div>
+        <div class="build_sub">
+            <input type="submit" value="Submit">
+        </div>
+        </div>
+        {% endfor %}
+    </form>
+</div>
+
+<script>
+function show_build_in() {
+  let echo_setup_toggle = document.getElementById("echo_setup").value;
+  document.getElementById("43311").style.display = (echo_setup_toggle === "43311") ? "block" : "none";
+  document.getElementById("44111").style.display = (echo_setup_toggle === "44111") ? "block" : "none";
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+
+.character_scenario_settings_echo {
+    display: flex;
+    flex-direction: row;
+}
+
+.character_scenario_settings_echo div{
+    padding: 20px;
+    font-size: 21px;
+    border-style: solid;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #ffe7d4;
+}
+
+.echo_head{
+    padding: 10px;
+}
+
+.echo_head h2{
+    display: inline-block;
+    text-align: center;
+}
+
+.echo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data_input div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 21px;
+}
+
+.cont_sub {
+    display: flex;
+}
+
+.cont_sub input{
+    border-width: thick;
+    font-weight: bold;
+    font-size: 24px;
+    background: #ffe7d4;
+    transition: background-color 0.15s;
+}
+
+.cont_sub input:hover{
+    background-color: #00ffff;
+}
+
+.analysis_echo div{
+    text-align:center;
+}
+
+.analysis_echo div h2{
+    border-style: solid;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 100px;
+}

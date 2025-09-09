@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="text_stuff">
+<div><h2>General Instructions</h2></div>
+<div><ul>
+    <li>The worth of an Echo naturally depends on its environment: therefore an Echo Score is character and build specific. 
+    </li>
+    <li>THEREFORE: Please make sure that the character, their total build ER (more about this below) and whether they benefit from Zhezhi or Yangyang in the character's best team/your team - are all entered correctly. 
+    </li>
+    <li>The total ER is the value you see in your stat-page. To set it up correctly: Make your character ready for battle as you normally would: 
+        <li>Equip the correct Echo-set (the Echo being evaluated is presumably a part of this set). 
+        </li>
+        <li>Equip the correct weapon for this build. 
+        </li>
+        <li>Deploy the character (so they're in the deployed exploration team). 
+        </li>
+    </li>
+    <li>Equipping the correct Echo-set and weapon reflects certain buffs (like ER) that they provide, while deploying them reflects some other stats they have (for example Phrolova on the 3-piece Havoc set). 
+    </li>
+</ul></div>
+<div>
+    <h2>About Echo Score: </h2>
+    <ul>
+        <li>This method is best suited to do quick and easy evaluations on the Echoes, and is probably going to be the most used feature of the EVC (this is true for me personally, in my daily grinding). </li>
+        <li>However, note that the scores calculated here are subject to what is called the "First Echo Burden"</li>
+        <li>For example, if your character uses ER and has 10% more ER than the recommended amount in their full build, the program will discard this 10% ER from the Echo. </li>
+        <li>For this character, if you analyze an Echo that has 12.4% ER, the the program will treat this as having only 2.4% as it discards any excess. </li>
+        <li>If this is one of the stronger Echoes in your set (or an Echo that you're less likely to replace compared to others), than this score is unfair. </li>
+        <li>In this case, I would suggest subtracting the ER substats you get from the Echoes that you're more likely to replace, from the total ER of your build, and considering that Echo score instead. </li>
+    </ul>
+</div>
+<div>
+    <h2>About Build Score: </h2>
+    <ul>
+        <li>[NOTE THE BUG: currently only works when all stats (whether they're relavant to the character or not) are provided (they can be 0.0, as long as that's also true for your build)]. </li>
+        <li>This method is best suited to do quick and easy evaluations of your whole build, and is probably going to be the second most used function of the EVC. </li>
+        <li>I personally use it to guage which characters are the weakest so I can work on them, if I don't already have any particular direction to spend my waveplates. </li>
+        <li>!IMPORTANT! HOW TO USE: 
+            <li>Make sure that the correct Echo setup (43311 vs 44111) is selected. Then enter the main stats of your character's Echoes. </li>
+            <li>After keeping in mind the general instructions, open the character page and click on the Echo section on the left (third option in the left side-bar). </li>
+            <li>Next, open the Echo Preset menu by clicking on the first circle at the bottom right. </li>
+            <li>The stats and the values you see here are to be entered directly in the calculator. No adding or subtracting or worrying about anything else, simply enter what you see and submit. </li>
+        </li>
+    </ul>
+</div>
+<div>
+    <h2>About Full Score: </h2>
+    <ul>
+        <li>This section is to completely evaluate your character. It shows the scores and tiers of each Echo, as well as the whole build. </li>
+        <li>Due to it being not so quick, this feature will probably only be used when you plan to evaluate all the Echoes of a character anyway (in order to determine what are the weakest Echoes that you should try to replace with your limited tuners and echo exp). </li>
+        <li>The build score you get here as compared to the build score from the "build score" part should be the exact same, with around 1 to 2% margin of error (so less than 1 or 2 points). </li>
+        <li>If you want preciseness, the score obtained here is the most accurate. </li>
+        <li>The reason for the discrepancy is due to rounding errors and I've personally only experienced deviations of less than 1 point. </li>
+    </ul>
+</div>
+<div>
+    <h2>Tier explanations: </h2>
+    <p>This is a scale where your Echo(es) gets 100 points when it has the best 5 sub stats for your character in the given scenario, all rolled exactly at average. <br>
+    If you are wondering why not "rolled at max", it's because 1. the evaluation metric must use this scale and 2. it ruins all the fun by unjustly marking clearly insane Echoes as trash. <br>
+    Of course, I will make this option available too (it's called "Overdrive Mode", coming soon along with a detailed theory breakdown of how EVC works and why), but you'll immediately  see it's not 
+    the scale you want to use. </p>
+    <ol>GOD TIER (Score <span>&#8805;</span> 99): The One Piece... THE ONE PIECE IS REALLL! (~can we get much higher~) </ol>
+    <ol>EXTREME TIER (99 &gt Score <span>&#8805;</span> 88): Perfect piece, for all intents and purposes. As the name suggest, very crazy piece. </ol>
+    <ol>HIGH-INVESTMENT TIER (88 &gt Score <span>&#8805;</span> 77): Again as the name suggests. This is what an average piece of a highly invested character looks like</ol>
+    <ol>WELL-BUILT TIER (77 &gt Score <span>&#8805;</span> 66): If the average score of the echoes of your character falls in this tier, they are considered well built and you can happily move on the the next if you want to build more characters</ol>
+    <ol>DECENT TIER (66 &gt Score <span>&#8805;</span> 55): Echoes that are good enough to clear ToA fall in this range (of course with caviats). If your average score of your Echoes (build score) is here, make sure to fully level up any other aspects (like weapon, character levels, character forte tree and abilities) before improving your Echoes</ol>
+    <ol>BASE TIER (55 &gt Score <span>&#8805;</span> 44): The first acceptable value a newly farmed echo/echo set should have (if you score lower for the build, you are most likely wasting Echo upgrade resources, as the lack of strength is evident for these pieces before you reach level 25 on all 5 of them)</ol>
+    <ol>UNBUILT TIER (Score &lt 44): Where's that echo coming from... </ol>
+</div>
+</div>
+{% endblock %}
