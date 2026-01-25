@@ -41,7 +41,8 @@ class GameData:
 class Character:
 
     data: dict[str, list]={
-        #Name:          [[cr%, cd%, atk%, fatk, hp%, fhp, def%, fdef, ba%, ha%, skill%, liberation%], [req_er, imp_er, rc], analysis]
+        #Name:          [[cr%, cd%, atk%, fatk, hp%, fhp, def%, fdef, ba%, ha%, skill%, liberation%], [required_er, importance_er, resonace_cost], analysis]
+        #For a character that scales from Atk% Cr=CD=1.0, Atk%=0.5, FlatAtk=0.25, Attribute%=0.5*(the ratio of this attribute%). For more details, ready "Acheived Value" section found in articles at echovaluecalc.com
         "Aalto (DPS)":                              [[1.0, 1.0, 0.5, 0.25, 0.0, 0.0, 0.0, 0.0, 0.5*0.70, 0.0, 0.5*0.15, 0.5*0.10], [125.0, 0.45, 150.0], True],
         "Aalto (Sub-DPS)":                          [[1.0, 1.0, 0.5, 0.25, 0.0, 0.0, 0.0, 0.0, 0.5*0.45, 0.0, 0.5*0.25, 0.5*0.15], [135.0, 1.0, 150.0], True],
         "Augusta":                                  [[1.0, 1.0, 0.5, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5*0.75, 0.5*0.15, 0.0], [125.0, 0.6, 125.0], True],
