@@ -51,3 +51,10 @@ Final Notes:
 Imo, the lowest expectation when creating a tool like this is that I myself find the tool useful and satisfying.
 The useful part is obvious to me: I have constantly used this tool, not only to test and refine it to make sure it behaves as expected in accordance with the theory for any type of characters possible, but also practically in the situations where it is meant to be used in the first place. I use it constantly to determine if my characters are built, or what characters to improve by finding out the build score, or gauge how strong my characters are, and compare that prediction practically in combat zones like ToA. I use it to determine who are my weakest characters, and what are their weakest echoes. I use it to set personal goals: when I have multiple characters to build, I build one up to a "well" build (a build score of 66 and above), move on to the next, and then come back to improve the target build score if I want in a prioritized way, for example. Saving huge amounts of time and waveplates that would otherwise be wasted being stuck on a single character, chasing a random build strength that's never good enough once I reach it (because you can't even tell if you reached it until you've spent too much), which would inturn reduce how many different characters and teams I get to experience. 
 The satisfaction part is also obvious: it makes Echo strength obvious. Before, it used to really bother me that I couldn't simply guage Echo's worth by counting substats due to the complexity in WuWa's stats and rolls compared to other games like Genshin. Another point of satisfaction is knowing that the Echo scores produced are accurate. Knowing the test cases and scenarios, I am confident that EVC fairly and justly evaluates the stats according to the theory in any scenario. After all, what's the point of a calculator if you can't trust the number it outputs! 
+
+
+## License Notes
+
+This project was previously released under GPL-3.0. That license applies only to those earlier versions.
+
+Current and future versions are licensed under the EVC License, which restricts commercial use, redistribution, and hosting.
