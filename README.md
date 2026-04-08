@@ -1,3 +1,6 @@
+Live App: 
+https://www.echovaluecalc.com
+
 # UPDATE
 I am able to focus heavily on upgrading myself as a dev for the next few months. 
 Unfortunately, a lot of this development may be invisible at the start. (At least, that's how I see myself integrating all the upgrades that I've envisoned for this project. I could be wrong though.) 
