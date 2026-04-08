@@ -1,4 +1,11 @@
-# Echo-Value-Calculator-Name-subject-to-change-
+# UPDATE
+I am able to focus heavily on upgrading myself as a dev for the next few months. 
+Unfortunately, a lot of this development may be invisible at the start. (At least, that's how I see myself integrating all the upgrades that I've envisoned for this project. I could be wrong though.) 
+Definitely expect small scale QoLs and updates/changes to the website/engine in the short-term (couple of weeks), and large scale amazing features in the long-term (couple of months). 
+The main logic of the calculator will be untouched (unless bugs/bug-fixes are found). So rest assured! The scores you calculate now are (and will stay) as accurate and precise as I can make them. 
+Thank you so much for using the Echo Value Calculator. I will keep everyone posted!
+
+## Echo Value Calculator
 
 
 A tool that determines the worth of your echoes and Echo-sets (builds) of your characters in Wuthering Waves.
