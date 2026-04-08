@@ -65,3 +65,7 @@ The satisfaction part is also obvious: it makes Echo strength obvious. Before, i
 This project was previously released under GPL-3.0. That license applies only to those earlier versions.
 
 Current and future versions are licensed under the EVC License, which restricts commercial use, redistribution, and hosting.
+
+## Author
+
+Atharva Chingre
