@@ -3,7 +3,7 @@ https://www.echovaluecalc.com
 
 # UPDATE
 
-09.04.26: Creating a new repo for this project: https://github.com/AstyuteChick/Echo-Value-Calculator. 
+09.04.26: Creating a new repo for this project: https://github.com/AstyuteChick/Echo-Value-Calculator. Future updates on the Echo Value Calculator will only be available/discussed there. 
 
 I am able to focus heavily on upgrading myself as a dev for the next few months. 
 Unfortunately, a lot of this development may be invisible at the start. (At least, that's how I see myself integrating all the upgrades that I've envisoned for this project. I could be wrong though.) 
